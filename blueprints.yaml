@@ -1,0 +1,32 @@
+name: CDN Function
+version: 0.1.0
+description: CDN function to get specific URLs from a CDN
+icon: cloud-upload
+author:
+  name: Muflone
+  email: webreg@vbsimple.net
+homepage: https://github.com/muflone/grav-plugin-cdn-function
+demo: https://github.com/muflone/grav-plugin-cdn-function/blob/master/README.md
+keywords: plugin, images, cdn, function
+bugs: https://github.com/muflone/grav-plugin-cdn-function/issues
+docs: 
+license: GPL
+
+form:
+  validation: strict
+  fields:
+    enabled:
+      type: toggle
+      label: Plugin status
+      highlight: 1
+      default: 0
+      options:
+        1: Enabled
+        0: Disabled
+      validate:
+        type: bool
+    pullzone:
+      type: text
+      label: CDN Domain
+      placeholder: "cdn.muflone.com"
+      help: The domain hosting your CDN distribution
